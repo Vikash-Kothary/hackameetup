@@ -26,7 +26,7 @@ class FlightResultsActivity : AppCompatActivity() {
     private val viewModelFactory: AppViewModelFactory = DefinitelyNotDagger.appViewModelFactory
 
     private val recycler: RecyclerView by bindView(R.id.recyclerview)
-    private val paginationIndicator: TextView by bindView(R.id.results_page_indicator)
+//    private val paginationIndicator: TextView by bindView(R.id.results_page_indicator)
     private val adapter: FlightResultCardAdapter = FlightResultCardAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,9 +48,11 @@ class FlightResultsActivity : AppCompatActivity() {
 
     private fun bindData(itinerary: FlightResults?) {
         itinerary?.let {
-            supportActionBar?.subtitle = it.title
+//            supportActionBar?.subtitle = it.title
+            supportActionBar?.title = it.title
+            supportActionBar?.subtitle = resources.getString(R.string.subtitle_activity_flights_amount, it.itineraries.size, it.itineraries.size)
             // no clue where to get the "x out of x results" from. fake it till you make it
-            paginationIndicator.text = resources.getString(R.string.results_amount, it.itineraries.size, it.itineraries.size)
+//            paginationIndicator.text = resources.getString(R.string.results_amount, it.itineraries.size, it.itineraries.size)
             adapter.itineraries = it.itineraries.also { adapter.notifyDataSetChanged() }
         }
     }
