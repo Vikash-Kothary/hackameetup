@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context="net.skyscanner.hackameetup.flightresults.FlightResultsActivity">
 
     <android.support.v7.widget.RecyclerView
@@ -39,4 +40,14 @@
             <!--android:textAllCaps="true"/>-->
     <!--</FrameLayout>-->
 
-</FrameLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentBottom="true"
+        app:titleTextColor="@android:color/white"
+        >
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

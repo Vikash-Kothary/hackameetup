@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.Toolbar
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
@@ -25,6 +26,7 @@ class FlightResultsActivity : AppCompatActivity() {
 
     private val viewModelFactory: AppViewModelFactory = DefinitelyNotDagger.appViewModelFactory
 
+    private val toolbar: Toolbar by bindView(R.id.toolbar)
     private val recycler: RecyclerView by bindView(R.id.recyclerview)
 //    private val paginationIndicator: TextView by bindView(R.id.results_page_indicator)
     private val adapter: FlightResultCardAdapter = FlightResultCardAdapter()
@@ -32,6 +34,8 @@ class FlightResultsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flight_results)
+
+        setSupportActionBar(toolbar)
 
         supportActionBar?.apply {
             setDisplayHomeAsUpEnabled(true)
