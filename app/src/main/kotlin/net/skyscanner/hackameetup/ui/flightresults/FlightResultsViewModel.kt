@@ -1,4 +1,4 @@
-package net.skyscanner.hackameetup.flightresults
+package net.skyscanner.hackameetup.ui.flightresults
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
@@ -26,9 +26,9 @@ class FlightResultsViewModel(
     private val mapper: (List<FlightItinerary>) -> FlightResults = {
         val dateFormat = DateTimeFormatter.ofPattern("dd MMM")
         FlightResults(
-            title = "${dateFormat.format(nextMonday)} – ${dateFormat.format(dayAfterNextMonday)}, 1 adult, economy",
-            resultCount = it.size,
-            itineraries = it
+                title = "${dateFormat.format(nextMonday)} – ${dateFormat.format(dayAfterNextMonday)}, 1 adult, economy",
+                resultCount = it.size,
+                itineraries = it
         )
     }
 

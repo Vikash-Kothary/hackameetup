@@ -1,4 +1,4 @@
-package net.skyscanner.hackameetup.flightresults
+package net.skyscanner.hackameetup.ui.flightresults
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
@@ -20,7 +20,7 @@ import net.skyscanner.hackameetup.application.AppViewModelFactory
 import net.skyscanner.hackameetup.application.DefinitelyNotDagger
 import net.skyscanner.hackameetup.feature.flightsearch.data.FlightItinerary
 import net.skyscanner.hackameetup.feature.flightsearch.data.FlightLeg
-import net.skyscanner.hackameetup.flightresults.FlightResultsViewModel.FlightResults
+import net.skyscanner.hackameetup.ui.flightresults.FlightResultsViewModel.FlightResults
 
 class FlightResultsActivity : AppCompatActivity() {
 

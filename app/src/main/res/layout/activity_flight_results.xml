@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="net.skyscanner.hackameetup.flightresults.FlightResultsActivity">
+    tools:context="net.skyscanner.hackameetup.ui.flightresults.FlightResultsActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview"

@@ -8,7 +8,7 @@
 
     <application tools:ignore="AllowBackup,GoogleAppIndexingWarning,MissingApplicationIcon">
         <activity
-            android:name="net.skyscanner.hackameetup.flightresults.FlightResultsActivity"
+            android:name="net.skyscanner.hackameetup.ui.flightresults.FlightResultsActivity"
             android:label="@string/title_activity_flight_results"
             android:theme="@style/AppTheme">
             <intent-filter>
