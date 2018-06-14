@@ -4,4 +4,8 @@
     <string name="subtitle_activity_flights_amount">Showing %d of %d results</string>
     <!--<string name="results_amount">%d of %d results</string>-->
     <string name="sort_filters">Sort &amp; filters</string>
+    <string name="hint_origin">Departing From</string>
+    <string name="hint_destination">Flying To</string>
+    <string name="hint_outbound">From</string>
+    <string name="hint_inbound">To</string>
 </resources>

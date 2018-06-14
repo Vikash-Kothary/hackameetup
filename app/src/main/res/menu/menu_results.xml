@@ -2,22 +2,14 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/app_bar_search"
-        android:icon="@drawable/ic_search_black"
-        android:title="Search"
-        app:showAsAction="always"/>
+
 
     <!-- to show the three dots -->
 
     <item
-        android:title="Nothing"
-        app:showAsAction="never"/>
-    <item
-        android:title="to see"
-        app:showAsAction="never"/>
-    <item
-        android:title="here"
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black"
+        android:title="Search"
         app:showAsAction="never"/>
 
 </menu>

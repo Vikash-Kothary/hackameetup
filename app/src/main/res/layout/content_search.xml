@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/card_destination"
+        app:cardBackgroundColor="@color/colorAccent">
+        <EditText
+            android:id="@+id/edittext_origin"
+            android:hint="@string/hint_origin"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/whiteish_background"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/card_outbound"
+        app:cardBackgroundColor="@color/colorAccent">
+        <EditText
+            android:id="@+id/edittext_destination"
+            android:hint="@string/hint_destination"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/whiteish_background"/>
+    </android.support.v7.widget.CardView>
+
+    <View android:id="@+id/dummy"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_outbound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/toolbar"
+        android:layout_alignRight="@id/dummy"
+        android:layout_alignParentLeft="true"
+        app:cardBackgroundColor="@color/colorAccent">
+        <EditText
+            android:id="@+id/edittext_outbound"
+            android:hint="@string/hint_outbound"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/whiteish_background"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_inbound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/toolbar"
+        android:layout_alignLeft="@id/dummy"
+        android:layout_alignParentRight="true"
+        app:cardBackgroundColor="@color/colorAccent">
+        <EditText
+            android:id="@+id/edittext_inbound"
+            android:hint="@string/hint_inbound"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/whiteish_background"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:transitionName="toolbar"
+        app:titleTextColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        >
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
