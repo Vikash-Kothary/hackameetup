@@ -1,4 +1,5 @@
 <resources>
+    <string name="title_activity_flight_search">Flight Search</string>
     <string name="title_activity_flight_results">Flight Results</string>
     <string name="subtitle_activity_flights_amount">Showing %d of %d results</string>
     <!--<string name="results_amount">%d of %d results</string>-->
